@@ -109,11 +109,3 @@ class Path:
         new_path = self.path + os.sep + str(other)
         new_files = []
         return Path(path=new_path, files=new_files)
-
-p=Path(r"C:\Users\happy\Videos\Legion (2017) Season 3 S03 (1080p AMZN WEB-DL x265 HEVC 10bit AAC 5.1 Vyndros)", files=["Legion.S03E01.Chapter.20.1080p.10bit.AMZN.WEB-DL.AAC5.1.HEVC-Vyndros.mkv","Legion.S03E02.Chapter.21.1080p.10bit.AMZN.WEB-DL.AAC5.1.HEVC-Vyndros.mkv"])
-print(p.path, p.files)
-
-size = p.get_size()
-parent = p.get_parent()
-print(f"Size: {size}")
-print(f"parent: {parent}")
